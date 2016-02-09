@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Js Sample with Tweet Split</title>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='assets/styles.css'>
+</head>
+<body>
+  <div class="container">
+    <h1>(rather unpretentious) Tweetstorm using Vuejs</h1>
+    <p>The idea of this is to split a <a href="tweet-split.txt">blob of text</a> into roughly 140 characters tweets with the index so users can track - aka <a href="https://twitter.com/pmarca/status/552186222559244288">tweetstorm</a></p>
+    <p><strong>TODO</strong>: Integration with Twitter to be able to post.</p>
+    <ul class="tweets">
+      <li v-for="tweet in tweets" transition stagger="70">{{ tweet }}</li>
+    </ul>
+  </div>
+  <script type="text/javascript" src="assets/scripts.js"></script>
+</body>
+</html>

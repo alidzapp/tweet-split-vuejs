@@ -1,0 +1,15 @@
+{
+  "name": "tweet-split-vuejs",
+  "version": "0.0.1",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francisco Antunes",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.13.4"
+  },
+  "description": "A version of the tweet-split now using vuejs"
+}

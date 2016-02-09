@@ -1,0 +1,51 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #7A6A46;
+}
+
+.container {
+  width: 50%; /* no need to use the full width */
+}
+
+a {
+  color: #E0A421;
+  transition: color .3s linear;
+}
+
+a:hover {
+  color: #000;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.v-transition {
+  color: #E0A421;
+  border: 1px solid #C98A3B;
+  background: #EFEACC;
+  border-radius: 5px;
+  padding: 5px;
+  list-style: none;
+  margin: 0 0 5px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .5s, opacity .5s linear, color .3s linear;
+}
+
+.v-transition:hover {
+  color: #000;
+}
+
+/*
+a trick to make the cascade effect
+*/
+.v-transition:last-child {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.index {
+  color: #000;
+}
